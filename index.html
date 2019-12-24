@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+    <meta charset="utf-8">
+    <title>2048</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/img.css">
+    <script src="js/game.js"></script>
+    <script src="js/hammer.min.js"></script>
+  </head>
+  <body onload="onload()" onkeydown="keydown(event)">
+	<!--<a style="opacity:.4; position:absolute;" href="keepo"><img src="/img/ttv/KKona.png" /></a>--><div style="font-size:300%" id="counter"></div>
+	<div id="container">
+		<div id="grid"></div>
+		<div id="overlay">
+			<p style='text-align:center; font-family:"Courier New", Courier, monospace; font-size:24px' id="gameover">2048</p>
+			<center>
+				<div class="btn" onclick="reset()" id="start">Start</div>
+				<br><br><span>Use your arrow keys / touch to move the blocks. Combine equal blocks to merge them.</span>
+			</center>
+		</div>
+	</div>
+  </body>
+</html>
